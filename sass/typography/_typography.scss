@@ -1,0 +1,15 @@
+body {
+    position: relative;
+    margin: 0;
+    font-family: map-get($map: $theme-fonts, $key: font-body);
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: map-get($map: $theme-colors, $key: txt-body);
+    background-color: map-get($map: $theme-colors, $key: bg-dark);
+    background-image: url("/wp-content/themes/greenmeta/images/background-body.png");
+    background-size: contain;
+    background-repeat: repeat;
+    overflow-x: hidden;
+}
+
+@import "headings";

@@ -178,3 +178,23 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function wpse_enqueue_page_template_styles()
+{
+    if (is_page_template('template-pages/page-home.php')) {
+        wp_enqueue_style('swiper', get_stylesheet_directory_uri() . '/libs/swiper/swiper-bundle.min.css');
+        wp_enqueue_style('page-template', get_stylesheet_directory_uri() . '/css/page-home.css');
+    }
+}
+
+add_action('wp_enqueue_scripts', 'wpse_enqueue_page_template_styles');
+
+function wpse_enqueue_page_template_scripts()
+{
+    if (is_page_template('template-pages/page-home.php')) {
+        wp_enqueue_script('jquery', array());
+        wp_enqueue_script('swiper', get_template_directory_uri() . '/libs/swiper/swiper-bundle.min.js', array(), _S_VERSION, true);
+        wp_enqueue_script('greenbeli-home', get_template_directory_uri() . '/js/home.js', array(), _S_VERSION, true);
+    }
+}
+
+add_action('wp_enqueue_scripts', 'wpse_enqueue_page_template_scripts');
