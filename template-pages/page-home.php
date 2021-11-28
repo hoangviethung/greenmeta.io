@@ -203,6 +203,9 @@
         <div class="section-title">
             <h2> <?php echo($home_grmt_token_title) ?></h2>
         </div>
+        <div class="home-grmt-token-content">
+            <?php echo($home_grmt_token_content) ?>
+        </div>
         <div class="home-grmt-token-image">
             <?php
                 if (!empty($home_grmt_token_image)) : ?>
@@ -211,9 +214,6 @@
                 width="<?php echo esc_attr($home_grmt_token_image['width']); ?>"
                 height="<?php echo esc_attr($home_grmt_token_image['height']); ?>" />
             <?php endif; ?>
-        </div>
-        <div class="home-grmt-token-content">
-            <?php echo($home_grmt_token_content) ?>
         </div>
         <div class="home-grmt-token-call-to-action">
             <p><?php echo($home_tokenomics_call_to_action['desc'])?></p>

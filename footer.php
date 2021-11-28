@@ -37,11 +37,11 @@
                     <?php echo $greenbeli_description; ?>
                 </p>
                 <?php endif; ?>
-                <div class="footer__nav">
+                <!-- <div class="footer__nav">
                     <a class="bt bt--primary-light" href="https://greenbeli.gitbook.io/green-beli/" target="_blank"
                         rel="noopener noreferrer">Whitepaper</a>
                     <a class="bt bt--primary" href="/terms-of-use">Terms of Use</a>
-                </div>
+                </div> -->
             </div>
             <div class="footer-socials">
                 <h3 class="footer__title">JOIN OUR COMMUNITIES</h3>
